@@ -1,5 +1,7 @@
 """Per-platform registry for filter-report."""
 
+from __future__ import annotations
+
 from dataclasses import dataclass, field
 
 
