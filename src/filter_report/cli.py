@@ -117,7 +117,7 @@ def rule(domain, rule_type):
         filter-report rule ads.example.com
         filter-report rule banner.example.com --type hide
     """
-    domain = domain.strip().lstrip("https://").lstrip("http://").split("/")[0]
+    domain = domain.strip().removeprefix("https://").removeprefix("http://").split("/")[0]
     if rule_type == "block":
         click.echo(f"||{domain}^")
     elif rule_type == "hide":

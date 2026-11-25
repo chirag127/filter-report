@@ -92,7 +92,8 @@ def _uassets_body(url: str, category: str, selector: str | None) -> str:
         "",
         "Element should be blocked or hidden by the filter list.",
         "",
-        "_Report prepared by [filter-report](https://filter-report.oriz.in). Human reviewer submitting._",
+        "_Report prepared by [filter-report](https://filter-report.oriz.in). "
+        "Human reviewer submitting._",
     ]
     return "\n".join(lines)
 
